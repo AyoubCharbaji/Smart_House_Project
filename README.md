@@ -38,13 +38,17 @@ docker-compose up -d
 ### 4️⃣ Firebase (Hosting)
 
 Install CLI:
+
 npm install -g firebase-tools
 
 Login:
+
 firebase login
 
 Run locally:
+
 firebase init hosting
 
 Deploy:
+
 firebase deploy
