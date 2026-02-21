@@ -1,0 +1,11 @@
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+
+DHT22
+DHT sensor library
+Buzz
+ESP32Servo
+ThingSpeak
+ThingSpeak_asukiaaa
+ThingESP
+FireBase32
