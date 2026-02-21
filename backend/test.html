@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Test POST Smart House</h3>
+    <button onclick="send()">Envoyer données</button>
+
+    <script>
+        async function send() {
+            const res = await fetch("http://localhost:3000/api/sensor", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    room: "Salon",
+                    temperature: 25,
+                    humidity: 40,
+                    gas: 150,
+                    light: 800
+                })
+            });
+
+            alert("Réponse : " + (await res.text()));
+        }
+    </script>
+</body>
+</html>
